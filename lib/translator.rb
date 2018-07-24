@@ -6,7 +6,8 @@ require "pry"
 def load_library(path)
   # code goes here emoticons.yml
   new_hash = {
-    #:
+    "get_emoticon" => {},
+    "get_meaning" => {}
   }
   emo_hash = YAML.load_file(path)
   emo_hash.each do |key, value|
