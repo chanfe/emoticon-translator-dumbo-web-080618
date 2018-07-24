@@ -13,6 +13,7 @@ def load_library(path)
   emo_hash.each do |key, value|
     new_hash["get_emoticon"] = value[0]
     new_hash["get_meaning"] = value[1]
+    binding.pry
   end
   #binding.pry
 end
