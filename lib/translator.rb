@@ -11,7 +11,8 @@ def load_library(path)
   }
   emo_hash = YAML.load_file(path)
   emo_hash.each do |key, value|
-    
+    new_hash["get_emoticon"] => value
+    new_hash["get_meaning"] => value
   end
   #binding.pry
 end
